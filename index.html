@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+
+            <li><a href="#">inicio</li>
+            <li><a href="#">Nosotros</li>
+            <li><a href="#">Productos</li>
+            <li><a href="#">Contactos</li>
+
+            <ul>
+
+    </nav>
+
+    <div class="divisor">
+
+    </div>
+
+    <section class="banner" alt="imagenes de pasteleria">
+        <h1 class="texto-imagen-principal">La Bonaerense</h1>
+    </section>
+    <div class="main-cita">
+        <div class="cita">
+            <div class="contenedor-cita">
+                <blockquote>
+                    <p>La Bonaerense nacio como un proyecto de pasteleria artesanal
+                        <br> Earum iste pariatur laborum unde corporis ipsam mollitia, doloribus sint veritatis
+                        explicabo ad sunt optio similique! Cumque.</br></p>
+
+                    <p>- Melina
+
+                </blockquote>
+                <!---### Parrafo autor###-->
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <section class="contenedor-seccion-principal">
+        <div class="seccion-principal">
+            <!-- Comienzo aside -->
+            <aside class="seccion-aside" id="seccion-aside-mostrada">
+                <form class="formulario-principal" name="form-princ">
+
+                    <div class="contenedor-botones-aside-1">
+                        <h3 class="filtros">FILTROS</h3>
+                        <button class="filters-clear-btn"><i class="fas fa-trash-alt" aria-label="trash bin"
+                                alt="trash bin"></i> LIMPIAR</button>
+                    </div>
+
+                    <div class="contenedor-botones-aside-2">
+                        <h3 class="buscar">BUSQUEDA</h3>
+                        <div class="contenedor-busqueda" class="boton-buscar">
+                            <input type="text" placeholder="Buscar productos" id="buscar-productos">
+                            <i class="fas fa-search" aria-label="Magnifier icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-botones-aside-3 formulario">
+                        <h3>CATEGORIAS</h3>
+                        <label for="categorias">
+                            <input type="checkbox" name="categoria" class="categorias" value="historia"> Tortas
+                        </label>
+                        <label for="categorias">
+                            <input type="checkbox" name="categoria" class="categorias" value="novela"> Agasajos
+                        </label>
+                        <label for="categorias">
+                            <input type="checkbox" name="categoria" class="categorias" value="filosofia"> Clasicos
+                        </label>
+                        <label for="categorias">
+                            <input type="checkbox" name="categoria" class="categorias" value="poesia"> Box
+                            personalizados
+                        </label>
+                    </div>
+    </section>
+
+    <!-- Fin aside -->
+    <!-- Comienzo productos -->
+
+    <div class="seccion-productos">
+        <div class="contenedor-barra-principal-productos">
+
+            <p class="cantidad-de-productos">
+                Mostrando <span class="cantidad-mostrada">12</span> producto(s) de 12
+
+            <div class="view-buttons">
+                Ver como
+                <button type="button" class="view-btn show-grid-btn">
+                    <i class="fas fa-th" aria-label="Grid icon" alt="Grid icon"></i>
+                </button>
+                <button type="button" class="view-btn show-list-btn">
+                    <i class="fas fa-list" aria-label="List icon" alt="List icon"></i>
+                </button>
+            </div>
+
+            <div class="boton-responsive-filtro">
+
+                <button type="button" class="view-btn boton-filtro">
+                    <i class="fas fa-filter" aria-label="Filter icon" alt="Filter icon"></i>
+                    <p class="texto-filters-responsive">Filtros</p>
+                </button>
+
+            </div>
+
+        </div>
+
+        <section class="contenedor-seccion-productos">
+
+
+            <div>
+                <article class="producto" data-nombre="Agasajos" data-categoria="personalizados" data-precio="800">
+                    <div class="product-img-container">
+
+                        <img src="imagenes/Agasajos.jpg" alt="pedidos personalizados" class="product-img" />
+                    </div>
+                    <div class="product-body">
+                        <h3 class="product-name">Agasajos personalizados</h3>
+
+                        <p class="product-price">$800</p>
+                        <p class="descripcion-producto no-mostrar"> Corazón de chocolate con galletas
+                        </p>
+
+                    </div>
+                </article>
+            </div>
+            <div>
+                <article class="producto" data-nombre="Agasajos" data-categoria="personalizados" data-precio="1800">
+                    <div class="product-img-container">
+
+                        <img src="imagenes/box1.jpg" alt="pedidos personalizados" class="product-img" />
+                    </div>
+                    <div class="product-body">
+                        <h3 class="product-name">Box personalizado</h3>
+
+                        <p class="product-price">$1800</p>
+                        <p class="descripcion-producto no-mostrar">Box con dulces y tortas
+                        </p>
+
+                    </div>
+                </article>
+            </div>
+
+            <div>
+                <article class="producto" data-nombre="Pastafrola pasteleria" data-categoria="Clasicos"
+                    data-precio="500">
+                    <div class="product-img-container">
+
+                        <img src="imagenes/Pastafrola.jpg" alt="pasteleria" class="product-img" />
+                    </div>
+                    <div class="product-body">
+                        <h3 class="product-name">Pastafrola </h3>
+
+                        <p class="product-price">$500</p>
+                        <p class="descripcion-producto no-mostrar">Pastafrola hecha con productos <br> de primera
+                            calidad y con mucho amor
+                        </p>
+
+                    </div>
+                </article>
+            </div>
+        </section>
+    </div>
+    </article>
+    </div>
+    <div>
+        <article class="producto" data-nombre="salados" data-categoria="Clasicos" data-precio="1800">
+            <div class="product-img-container">
+
+                <img src="imagenes/tortasalada.jpg" alt="pedidos personalizados" class="product-img" />
+            </div>
+            <div class="product-body">
+                <h3 class="product-name">Torta Salada</h3>
+
+                <p class="product-price">$1800</p>
+                <p class="descripcion-producto no-mostrar">Opción salados
+                </p>
+
+            </div>
+        </article>
+    </div>
+
+    <div>
+        <article class="producto" data-nombre="pasteleria" data-categoria="personalizados" data-precio="1800">
+            <div class="product-img-container">
+
+                <img src="imagenes/box3.jpg" alt="pedidos personalizados" class="product-img" />
+            </div>
+            <div class="product-body">
+                <h3 class="product-name">Box Mediano personalizado</h3>
+
+                <p class="product-price">$1800</p>
+                <p class="descripcion-producto no-mostrar"> personalizados
+                </p>
+
+            </div>
+        </article>
+    </div>
+
+    <div>
+        <article class="producto" data-nombre="pasteleria" data-categoria="personalizados" data-precio="1800">
+            <div class="product-img-container">
+
+                <img src="imagenes/Cupcakes.jpg" alt="pedidos personalizados" class="product-img" />
+            </div>
+            <div class="product-body">
+                <h3 class="product-name">Box Mediano personalizado</h3>
+
+                <p class="product-price">$1800</p>
+                <p class="descripcion-producto no-mostrar"> personalizados
+                </p>
+
+            </div>
+        </article>
+    </div>
+    <div>
+        <article class="producto" data-nombre="pasteleria" data-categoria="personalizados" data-precio="1800">
+            <div class="product-img-container">
+
+                <img src="imagenes/tortadaisy1.jpg" alt="pedidos personalizados" class="product-img" />
+            </div>
+            <div class="product-body">
+                <h3 class="product-name">Box Mediano personalizado</h3>
+
+                <p class="product-price">$1800</p>
+                <p class="descripcion-producto no-mostrar"> personalizados
+                </p>
+
+            </div>
+        </article>
+    </div>
+    <div>
+        <article class="producto" data-nombre="pasteleria" data-categoria="personalizados" data-precio="1800">
+            <div class="product-img-container">
+
+                <img src="imagenes/d2388da2fdd22791336cf06efc835974.jpg" alt="pedidos personalizados"
+                    class="product-img" />
+            </div>
+            <div class="product-body">
+                <h3 class="product-name">Box Mediano personalizado</h3>
+
+                <p class="product-price">$1800</p>
+                <p class="descripcion-producto no-mostrar"> personalizados
+                </p>
+
+            </div>
+        </article>
+    </div>
+    <div>
+        <article class="producto" data-nombre="pasteleria" data-categoria="personalizados" data-precio="1800">
+            <div class="product-img-container">
+
+                <img src="imagenes/Pan dulce.jpg" alt="pedidos personalizados" class="product-img" />
+            </div>
+            <div class="product-body">
+                <h3 class="product-name">Box Mediano personalizado</h3>
+
+                <p class="product-price">$1800</p>
+                <p class="descripcion-producto no-mostrar"> personalizados
+                </p>
+
+            </div>
+        </article>
+    </div>
+    <div>
+        <article class="producto" data-nombre="pasteleria" data-categoria="personalizados" data-precio="1800">
+            <div class="product-img-container">
+
+                <img src="imagenes/Chocoreo.jpg" alt="pedidos personalizados" class="product-img" />
+            </div>
+            <div class="product-body">
+                <h3 class="product-name">Box Mediano personalizado</h3>
+
+                <p class="product-price">$1800</p>
+                <p class="descripcion-producto no-mostrar"> personalizados
+                </p>
+
+            </div>
+        </article>
+    </div>
+    <div>
+        <article class="producto" data-nombre="pasteleria" data-categoria="personalizados" data-precio="1800">
+            <div class="product-img-container">
+
+                <img src="imagenes/box2.jpg" alt="pedidos personalizados" class="product-img" />
+            </div>
+            <div class="product-body">
+                <h3 class="product-name">Box Mediano personalizado</h3>
+
+                <p class="product-price">$1800</p>
+                <p class="descripcion-producto no-mostrar"> personalizados
+                </p>
+
+            </div>
+        </article>
+    </div>
+    <div>
+        <article class="producto" data-nombre="pasteleria" data-categoria="personalizados" data-precio="1800">
+            <div class="product-img-container">
+
+                <img src="imagenes/tortapersonalizada.jpg" alt="pedidos personalizados" class="product-img" />
+            </div>
+            <div class="product-body">
+                <h3 class="product-name">Box Mediano personalizado</h3>
+
+                <p class="product-price">$1800</p>
+                <p class="descripcion-producto no-mostrar"> personalizados
+                </p>
+
+            </div>
+        </article>
+    </div>
+
+
+
+
+
+    <!-- Fin productos -->
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
